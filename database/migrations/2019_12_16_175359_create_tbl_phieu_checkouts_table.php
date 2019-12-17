@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTblHoaDonTable extends Migration
+class CreateTblPhieuCheckoutsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,12 @@ class CreateTblHoaDonTable extends Migration
      */
     public function up()
     {
-        Schema::create('tblHoaDon', function (Blueprint $table) {
+        Schema::create('tblPhieuCheckout', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->dateTime('gioNhanSan')->nullable();
+            $table->dateTime('gioTraSan')->nullable();
             $table->integer('PhieuDatSan_ID');
-            $table->integer('NhanVien_ID');
-            $table->dateTime('NgayThanhToan');
+            $table->timestamps();
         });
     }
 
@@ -28,6 +29,6 @@ class CreateTblHoaDonTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tblHoaDon');
+        Schema::dropIfExists('tblPhieuCheckout');
     }
 }

@@ -49,10 +49,15 @@ class generateData extends Seeder
             'Đường 447B, quận 1, TP Hồ Chí Minh',
         ];
         $khungGio = [
-            6 => 16,
+            4 => 6,
+            6 => 8,
+            8 => 10,
+            10 => 12,
+            12 => 14,
+            14 => 16,
             16 => 18,
             18 => 20,
-            20 => 22,
+            20 => 22
         ];
         $matHang = [
             'Coca Cola chai lớn 1.5l',
@@ -139,14 +144,12 @@ class generateData extends Seeder
             DB::table('tblPhieuDatSan')->insert([
                 'SanBong_ID' => rand(1, 12),
                 'KhachHang_ID' => rand(1, 100),
-                'KhungGio_ID' => rand(1, 4),
+                'KhungGio_ID' => rand(1, 9),
                 'NhanVien_ID' => 4,
                 'QuanLy_ID' => 5,
                 'NgayBatDau' => $faker->dateTimeBetween('-5years', 'now'),
                 'NgayKetThuc' => $faker->dateTimeBetween('now', '+20days'),
-                'NgayThanhToan' => \Carbon\Carbon::now()->format('Y-m-d'),
-                'TienCoc' => rand(1000000, 100000000),
-                'TongTien' => rand(1000000, 100000000),
+                'TongTien' => rand(1,9)*1000000,
             ]);
         }
 
@@ -187,6 +190,19 @@ class generateData extends Seeder
                 'NgayNhapHang' => $faker->dateTimeBetween('-5years', 'now'),
             ]);
         }
-
+        for ($i = 0; $i < $limit; $i++) {
+            DB::table('tblHoaDon')->insert([
+                'NhanVien_ID' => rand(1,8),
+                'PhieuDatSan_ID' => $i+1,
+                'NgayThanhToan' => \Carbon\Carbon::now()->format('Y-m-d'),
+            ]);
+        }
+        for ($i = 0; $i < $limit; $i++) {
+            DB::table('tblPhieuCheckout')->insert([
+                'gioNhanSan' => \Carbon\Carbon::createFromFormat('Y-m-d H:i:s','2018-05-10 03:28:37'),
+                'gioTraSan' => \Carbon\Carbon::createFromFormat('Y-m-d H:i:s','2018-05-10 05:28:37'),
+                'PhieuDatSan_ID' => rand(1,50),
+            ]);
+        }
     }
 }
