@@ -22,7 +22,6 @@ class CreateTblPhieuDatSanTable extends Migration
             $table->integer('QuanLy_ID');
             $table->date('NgayBatDau')->nullable();
             $table->date('NgayKetThuc')->nullable();
-            $table->integer('TongTien')->nullable();
         });
     }
 

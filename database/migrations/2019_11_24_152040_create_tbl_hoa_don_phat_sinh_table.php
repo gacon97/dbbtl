@@ -13,8 +13,11 @@ class CreateTblHoaDonPhatSinhTable extends Migration
      */
     public function up()
     {
-        Schema::create('tbl_hoa_don_phat_sinh', function (Blueprint $table) {
+        Schema::create('tblHoaDonPhatSinh', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->integer('SoLuong');
+            $table->integer('PhieuCheckout_ID');
+            $table->integer('MatHang_ID');
         });
     }
 
@@ -25,6 +28,6 @@ class CreateTblHoaDonPhatSinhTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tbl_hoa_don_phat_sinh');
+        Schema::dropIfExists('tblHoaDonPhatSinh');
     }
 }

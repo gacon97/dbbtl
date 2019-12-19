@@ -18,6 +18,7 @@ class CreateTblHoaDonTable extends Migration
             $table->integer('PhieuDatSan_ID');
             $table->integer('NhanVien_ID');
             $table->dateTime('NgayThanhToan');
+            $table->integer('TongTien');
         });
     }
 
