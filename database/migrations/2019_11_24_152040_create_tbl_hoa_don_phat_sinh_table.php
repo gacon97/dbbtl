@@ -15,8 +15,7 @@ class CreateTblHoaDonPhatSinhTable extends Migration
     {
         Schema::create('tblHoaDonPhatSinh', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('SoLuong')->nullable();
-            $table->integer('DonGia')->nullable();
+            $table->integer('SoLuong');
             $table->integer('PhieuCheckout_ID');
             $table->integer('MatHang_ID');
         });

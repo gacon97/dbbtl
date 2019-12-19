@@ -119,7 +119,11 @@ class generateData extends Seeder
 
 
         }
-
+        DB::table('tblTaiKhoan')->insert([
+            'Username' => 'q',
+            'Password' => 'q',
+            'Role' => $role[rand(1,2)],
+        ]);
         foreach($sanBong as $key => $san)
         {
             DB::table('tblSanBong')->insert([
@@ -149,7 +153,6 @@ class generateData extends Seeder
                 'QuanLy_ID' => 5,
                 'NgayBatDau' => $faker->dateTimeBetween('-5years', 'now'),
                 'NgayKetThuc' => $faker->dateTimeBetween('now', '+20days'),
-                'TongTien' => rand(1,9)*1000000,
             ]);
         }
 
@@ -195,6 +198,7 @@ class generateData extends Seeder
                 'NhanVien_ID' => rand(1,8),
                 'PhieuDatSan_ID' => $i+1,
                 'NgayThanhToan' => \Carbon\Carbon::now()->format('Y-m-d'),
+                'TongTien' => rand(1,9)*1000000,
             ]);
         }
         for ($i = 0; $i < $limit; $i++) {
@@ -206,9 +210,15 @@ class generateData extends Seeder
         }for ($i = 0; $i < $limit / 2; $i++) {
             DB::table('tblHoaDonPhatSinh')->insert([
                 'SoLuong' => rand(1,3),
-                'DonGia' => rand(1,9)*100000,
                 'PhieuCheckout_ID' => $i,
                 'MatHang_ID' => rand(1,18),
+            ]);
+        }
+        for ($i = 0; $i < $limit; $i++) {
+            DB::table('tblHoaDonPhatSinh')->insert([
+                'SoLuong' => rand(1,3),
+                'PhieuCheckout_ID' => $i+1,
+                'MatHang_ID' => 1,
             ]);
         }
     }
