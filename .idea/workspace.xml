@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="509d9a32-d723-4208-9961-672316cdff20" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_24_151940_create_tbl_phieu_dat_san_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_24_151940_create_tbl_phieu_dat_san_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_24_152001_create_tbl_hoa_don_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_24_152001_create_tbl_hoa_don_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_24_152040_create_tbl_hoa_don_phat_sinh_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_24_152040_create_tbl_hoa_don_phat_sinh_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/generateData.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/generateData.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,8 +62,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/database/seeds/generateData.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="368">
-                  <caret line="179" column="44" lean-forward="true" selection-start-line="179" selection-start-column="44" selection-end-line="179" selection-end-column="44" />
+                <state relative-caret-position="725">
+                  <caret line="210" column="43" lean-forward="true" selection-start-line="210" selection-start-column="43" selection-end-line="210" selection-end-column="43" />
                   <folding>
                     <element signature="e#7#38#0#PHP" expanded="true" />
                   </folding>
@@ -121,11 +120,20 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_24_151940_create_tbl_phieu_dat_san_table.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="374">
                   <caret line="24" column="37" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="37" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_24_152040_create_tbl_hoa_don_phat_sinh_table.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="306">
+                  <caret line="20" column="39" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="39" />
                 </state>
               </provider>
             </entry>
@@ -146,7 +154,6 @@
         <option value="$PROJECT_DIR$/database/migrations/2019_11_24_151848_create_tbl_nguoi_dung_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_11_24_151921_create_tbl_tai_khoan_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_11_24_152013_create_tbl_san_bong_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_11_24_152040_create_tbl_hoa_don_phat_sinh_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_11_24_152056_create_tbl_mat_hang_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_11_24_152109_create_tbl_khung_gio_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_11_24_152126_create_tbl_hoa_don_nhap_hang_table.php" />
@@ -158,6 +165,7 @@
         <option value="$PROJECT_DIR$/database/migrations/2019_12_16_165638_create_phieu_checkouts_tabe.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_12_16_175004_create_phieu_checkouts_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_12_16_175359_create_tbl_phieu_checkouts_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_11_24_152040_create_tbl_hoa_don_phat_sinh_table.php" />
         <option value="$PROJECT_DIR$/database/seeds/generateData.php" />
       </list>
     </option>
@@ -313,6 +321,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -352,16 +366,26 @@
       <workItem from="1575298722414" duration="655000" />
       <workItem from="1575385114050" duration="785000" />
       <workItem from="1576514845452" duration="3359000" />
+      <workItem from="1576608404394" duration="285000" />
+      <workItem from="1576684807517" duration="1766000" />
     </task>
+    <task id="LOCAL-00001" summary="ok">
+      <created>1576608472136</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576608472136</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23492000" />
+    <option name="totallyTimeSpent" value="25543000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3128998" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3192964" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -406,6 +430,10 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="ok" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_24_151026_create_tbl_nguois_table.php" />
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_24_151333_create_tbl_nguois_table.php" />
@@ -445,17 +473,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_24_152040_create_tbl_hoa_don_phat_sinh_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_24_151848_create_tbl_nguoi_dung_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="18" column="37" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_12_16_165638_create_phieu_checkouts_tabe.php" />
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_12_16_175004_create_phieu_checkouts_table.php" />
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_24_152109_create_tbl_khung_gio_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_24_152001_create_tbl_hoa_don_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+          <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_24_152013_create_tbl_san_bong_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_24_152218_create_tbl_danh_sach_nhap_hang_n_c_c_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -473,27 +525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_24_152056_create_tbl_mat_hang_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_24_152109_create_tbl_khung_gio_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_12_16_165638_create_phieu_checkouts_tabe.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_24_151940_create_tbl_phieu_dat_san_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -501,32 +532,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_24_152013_create_tbl_san_bong_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_12_16_175004_create_phieu_checkouts_table.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_24_152056_create_tbl_mat_hang_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="19" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_24_152218_create_tbl_danh_sach_nhap_hang_n_c_c_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_24_152001_create_tbl_hoa_don_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-          <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+          <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -537,10 +546,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_11_24_152040_create_tbl_hoa_don_phat_sinh_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="39" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/generateData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="179" column="44" lean-forward="true" selection-start-line="179" selection-start-column="44" selection-end-line="179" selection-end-column="44" />
+        <state relative-caret-position="725">
+          <caret line="210" column="43" lean-forward="true" selection-start-line="210" selection-start-column="43" selection-end-line="210" selection-end-column="43" />
           <folding>
             <element signature="e#7#38#0#PHP" expanded="true" />
           </folding>

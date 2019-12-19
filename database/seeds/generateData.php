@@ -203,6 +203,13 @@ class generateData extends Seeder
                 'gioTraSan' => \Carbon\Carbon::createFromFormat('Y-m-d H:i:s','2018-05-10 05:28:37'),
                 'PhieuDatSan_ID' => rand(1,50),
             ]);
+        }for ($i = 0; $i < $limit / 2; $i++) {
+            DB::table('tblHoaDonPhatSinh')->insert([
+                'SoLuong' => rand(1,3),
+                'DonGia' => rand(1,9)*100000,
+                'PhieuCheckout_ID' => $i,
+                'MatHang_ID' => rand(1,18),
+            ]);
         }
     }
 }
